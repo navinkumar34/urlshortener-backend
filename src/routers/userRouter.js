@@ -33,7 +33,7 @@ router
         }
       );
 
-      const activationURL = `https://csb-zknem.netlify.app/activateuser/authenticate/${token}`;
+      const activationURL = `https://csb-zknem.netlify.app/#/activateuser/authenticate/${token}`;
       const mailOptions = {
         to: email,
         from: "urlshorten9@gmail.com",
@@ -128,7 +128,7 @@ router
       const token = jwt.sign({ email }, process.env.JWT_PASS_KEY, {
         expiresIn: "2 days"
       });
-      const resetpassURL = `https://csb-zknem.netlify.app/reset-password/authenticate/${token}`;
+      const resetpassURL = `https://csb-zknem.netlify.app/#/reset-password/authenticate/${token}`;
       const mailOptions = {
         to: email,
         from: "urlshorten9@gmail.com",
