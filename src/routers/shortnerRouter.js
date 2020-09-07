@@ -23,7 +23,7 @@ router
         return res.status(200).json({ shorturl: url.shortUrl });
       }
       const urlCode = shortId.generate();
-      const shortUrl = process.env.base_URL + "/" + urlCode;
+      const shortUrl = "https://url-shortn-service.herokuapp.com" + "/" + urlCode;
       url = new Url({
         urlCode,
         fullUrl,
