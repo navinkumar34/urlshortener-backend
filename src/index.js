@@ -46,6 +46,6 @@ app.get("/:code", async (req, res) => {
 app.use("/api/user", userRouter);
 app.use("/api/shortenurl", shorturlRouter);
 
-const Port = process.env.Port;
+const Port = process.env.PORT || 8000;
 
-app.listen(Port || 8000, () => console.log("server running"));
+app.listen(Port, () => console.log("server running"));
