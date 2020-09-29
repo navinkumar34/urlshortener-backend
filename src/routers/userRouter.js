@@ -36,7 +36,7 @@ router
       const activationURL = `https://csb-zknem.netlify.app/#/activateuser/authenticate/${token}`;
       const mailOptions = {
         to: email,
-        from: "urlshorten9@gmail.com",
+        from: "no-reply@shortenurl.com",
         subject: "Activation Link for your Account on Shorten-URL",
         text: "",
         html: `<h4>Click on the below link to activate your account</h4><br/>
@@ -131,7 +131,7 @@ router
       const resetpassURL = `https://csb-zknem.netlify.app/#/reset-password/authenticate/${token}`;
       const mailOptions = {
         to: email,
-        from: "urlshorten9@gmail.com",
+        from: "no-reply@shortenurl.com",
         subject: "Reset Password Link for your Account on Shorten-URL",
         text: "",
         html: `<h4>Click on the below link to reset your account password</h4><br/>
